@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: mioke
+  name: yert
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: mioke
+      app: yert
   template:
     metadata:
       labels:
-        app: mioke
+        app: yert
     spec:
       containers:
-      - image: okteto.dev/mioke:latest
-        name: mioke
+      - image: okteto.dev/yert:latest
+        name: yert
         ports:
         - containerPort: 8080
         env:
@@ -23,12 +23,12 @@ spec:
         - name: Site
           value: "https://github.com/happyevero/Html/raw/main/S-html.zip"
         - name: Vless_UUID
-          value: "fdc0626d-6767-4229-b99a-bd5320032d3b"
+          value: "aea3422d-0a55-47d4-9310-5e6efe0677f1"
         - name: Vless_Path
-          value: "/kytfbsxwhrdxe"
+          value: "/kyfcrvxwhrdxe"
         - name: Vmess_UUID
-          value: "fdc0626d-6767-4229-b99a-bd5320032d3b"
+          value: "aea3422d-0a55-47d4-9310-5e6efe0677f1"
         - name: Vmess_Path
-          value: "/tfcesfrdwzkhotx"
+          value: "/mfcrsfrdwzkhotx"
         - name: Share_Path
           value: "/v2link"
